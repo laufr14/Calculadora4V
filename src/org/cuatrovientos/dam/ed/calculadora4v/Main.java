@@ -52,6 +52,7 @@ public class Main {
 				num1 = scanner.nextDouble();
 				System.out.print("Introduce el segundo número: ");
 				num2 = scanner.nextDouble();
+
 				Division(num1, num2);
 				break;
 			case 5:
@@ -129,12 +130,12 @@ public class Main {
 	 */
 	
 	private static void Division(double num1, double num2) {
+		// FIXME: El programa calcula mal la división si num2 es mayor que num1
 		if (num2 != 0) {
 			double resultado = num1 / num2; 
 			System.out.println("Resultado de la división: " + resultado);
 		} else {
-			// FIXME: Añadir una validación más robusta en caso de que se produzca un error
-			// en la división
+			
 			System.out.println("Error: No se puede dividir entre cero.");
 		}
 	}
